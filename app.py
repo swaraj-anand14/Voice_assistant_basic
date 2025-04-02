@@ -11,7 +11,7 @@ load_dotenv()
 # NVIDIA Nemotron-70B API setup
 client = OpenAI(
     base_url="https://integrate.api.nvidia.com/v1",
-    api_key=os.getenv("NVIDIA_API_KEY")  # Replace with your actual API key
+    api_key=st.secrets.KEYS.NVIDIA_API_KEY  # Replace with your actual API key
 )
 
 def record_audio():
